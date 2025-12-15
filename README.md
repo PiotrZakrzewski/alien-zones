@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Foundry-v10-informational)
+![](https://img.shields.io/badge/Foundry-v13-informational)
 <!--- Downloads @ Latest Badge -->
 <!--- replace <user>/<repo> with your username/repository -->
 <!--- ![Latest Release Download Count](https://img.shields.io/github/downloads/<user>/<repo>/latest/module.zip) -->
@@ -7,6 +7,26 @@
 <!--- replace <your-module-name> with the `name` in your manifest -->
 <!--- ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2F<your-module-name>&colorB=4aa94a) -->
 
+# FoundryVTT Module Template (v13 Compatible)
+
+This boilerplate module is compatible with **Foundry VTT v12-13** and follows modern development best practices.
+
+## Key v13 Features & Best Practices
+
+This template is updated for Foundry VTT v13 which includes:
+
+- **ApplicationV2 Framework**: Use the new ApplicationV2 class for UI components (old Application class will be removed in v16)
+- **No jQuery**: Use vanilla JavaScript DOM manipulation instead of jQuery
+- **CSS Cascade Layers**: Module styles automatically use CSS layers for easier overrides
+- **ESM Modules**: Full ES module support with `foundry.mjs` entrypoint
+- **Modern JavaScript**: ES6+ syntax and features
+
+### Important Development Resources
+
+- [ApplicationV2 Guide](https://foundryvtt.wiki/en/development/api/applicationv2)
+- [API Migration Documentation](https://foundryvtt.com/article/migration/)
+- [Module Development Guide](https://foundryvtt.com/article/module-development/)
+- [CSS Cascade Layers](https://foundryvtt.wiki/en/development/guides/css-cascade-layers)
 
 # How to use this Template to create a versioned Release
 
@@ -64,8 +84,10 @@ When listing a new version, Version should be the version number you set above, 
 Clicking "Save" in the bottom right will save the new version, which means that anyone installing your module from within Foundry will get that version, and a post will be generated in the #release-announcements channel on the official Foundry VTT Discord.
 
 
-# FoundryVTT Module
+## About This Module
 
-Does something, probably
+A Foundry VTT module that does something interesting.
+
+Replace this description with details about your module's functionality.
 
 ## Changelog
