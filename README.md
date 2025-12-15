@@ -7,9 +7,9 @@
 <!--- replace <your-module-name> with the `name` in your manifest -->
 <!--- ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2F<your-module-name>&colorB=4aa94a) -->
 
-# FoundryVTT Module Template (v13 Compatible)
+# Alien Zones
 
-This boilerplate module is compatible with **Foundry VTT v12-13** and follows modern development best practices.
+A Foundry VTT v13 module that adds zone-based gameplay support for the Alien RPG system.
 
 ## Key v13 Features & Best Practices
 
@@ -84,10 +84,16 @@ When listing a new version, Version should be the version number you set above, 
 Clicking "Save" in the bottom right will save the new version, which means that anyone installing your module from within Foundry will get that version, and a post will be generated in the #release-announcements channel on the official Foundry VTT Discord.
 
 
-## About This Module
+## About Alien Zones
 
-A Foundry VTT module that does something interesting.
+This module adds zone-based gameplay support for the [Alien RPG system](https://github.com/pwatson100/alienrpg) in Foundry VTT.
 
-Replace this description with details about your module's functionality.
+### The Zone Problem
+
+Alien RPG uses **zones** as a core game mechanic for both combat range and stealth encounters. However, Foundry VTT is primarily designed around grid-based or distance measurement systems, which don't align well with zone-based gameplay. This creates friction when trying to apply Alien RPG's zone rules during play.
+
+### What This Module Does
+
+Alien Zones provides minimal but essential functionality to help Game Masters and players work with zone-based mechanics in Foundry VTT when running Alien RPG campaigns. It bridges the gap between Alien RPG's abstract zone system and Foundry's concrete measurement tools.
 
 ## Changelog

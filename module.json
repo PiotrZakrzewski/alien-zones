@@ -1,7 +1,7 @@
 {
-  "id": "module",
-  "title": "New Module",
-  "description": "A Foundry VTT module that does something interesting.",
+  "id": "alien-zones",
+  "title": "Alien Zones",
+  "description": "Zone-based gameplay support for the Alien RPG system, bridging the gap between zone mechanics and Foundry's grid-based measurements.",
   "version": "#{VERSION}#",
   "library": "false",
   "manifestPlusVersion": "1.2.0",
@@ -18,7 +18,13 @@
     }
   ],
   "relationships": {
-    "systems": [],
+    "systems": [
+      {
+        "id": "alienrpg",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
     "requires": []
   },
   "esmodules": [

@@ -14,10 +14,10 @@
 
 Hooks.once('init', async function() {
   // Module initialization - runs before Foundry is fully ready
-  console.log('New Module | Initializing module');
+  console.log('Alien Zones | Initializing module');
 });
 
 Hooks.once('ready', async function() {
   // Module ready - runs when Foundry is fully loaded
-  console.log('New Module | Module ready');
+  console.log('Alien Zones | Module ready');
 });
