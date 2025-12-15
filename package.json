@@ -1,0 +1,22 @@
+{
+  "name": "alien-zones",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Zone-based gameplay support for the Alien RPG system in Foundry VTT",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "foundryvtt",
+    "alien-rpg",
+    "zones"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "jest": "^29.7.0"
+  }
+}

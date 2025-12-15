@@ -28,6 +28,28 @@ This template is updated for Foundry VTT v13 which includes:
 - [Module Development Guide](https://foundryvtt.com/article/module-development/)
 - [CSS Cascade Layers](https://foundryvtt.wiki/en/development/guides/css-cascade-layers)
 
+## Development
+
+### Running Tests
+
+This module includes a Jest-based test suite with GitHub Actions CI/CD integration.
+
+```bash
+# Install dependencies
+npm install
+
+# Run tests once
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with coverage report
+npm run test:coverage
+```
+
+Tests are automatically run on push and pull requests via GitHub Actions.
+
 # How to use this Template to create a versioned Release
 
 1. Open your repository's releases page.
