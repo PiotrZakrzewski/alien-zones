@@ -1,3 +1,4 @@
 {
-    "MODULE.hello": "hello"
+    "ALIENZONE.ModuleName": "Alien Zones",
+    "ALIENZONE.EnteredZone": "{token} entered {zone}"
 }

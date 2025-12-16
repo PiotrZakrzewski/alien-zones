@@ -118,4 +118,26 @@ Alien RPG uses **zones** as a core game mechanic for both combat range and steal
 
 Alien Zones provides minimal but essential functionality to help Game Masters and players work with zone-based mechanics in Foundry VTT when running Alien RPG campaigns. It bridges the gap between Alien RPG's abstract zone system and Foundry's concrete measurement tools.
 
+## How to Use
+
+Using Alien Zones is simple and requires zero configuration:
+
+1. **Create Regions** using Foundry's built-in Region drawing tools (available in the left toolbar)
+2. **Draw rectangular zones** on your scene and give them names (e.g., "Landing Bay", "Cargo Hold", "Med Lab")
+3. **That's it!** When a player-controlled token enters any region, an automatic chat message appears: "Ripley entered Landing Bay"
+
+### Features
+
+- ✅ **Automatic Detection**: All regions are automatically tracked as zones - no setup needed
+- ✅ **Entry Only**: Messages only appear when entering a zone, not when moving within it or exiting
+- ✅ **Player Tokens Only**: NPC/monster tokens don't trigger messages (only player-controlled characters)
+- ✅ **Zone Names**: Uses the region name you set in Foundry's Region tools
+- ✅ **Visible to All**: Chat messages are visible to all players by default
+
+### Tips
+
+- Use Foundry's native **Region visibility settings** to control who sees the zone boundaries
+- Name your regions descriptively - the names appear in chat messages
+- Regions work with any shape (rectangle, ellipse, polygon) but rectangles are most common for zones
+
 ## Changelog
