@@ -16,11 +16,16 @@
  * - API Migration: https://foundryvtt.com/article/migration/
  */
 
-import { postZoneEntryMessage } from './lib/lib.js';
+import { postZoneEntryMessage, isAlienZone } from './lib/lib.js';
+import { handleZoneEntry } from './lib/zoneHandlers.js';
+import { initRegionConfigHooks } from './lib/regionConfig.js';
 
 Hooks.once('init', async function() {
   // Module initialization - runs before Foundry is fully ready
   console.log('Alien Zones | Initializing module');
+
+  // Initialize region config UI extension
+  initRegionConfigHooks();
 });
 
 Hooks.once('ready', async function() {
@@ -68,9 +73,9 @@ Hooks.on("updateToken", async (tokenDocument, change, options, userId) => {
   for (const regionId of newRegionIds) {
     if (!oldRegionIds.has(regionId)) {
       const region = canvas.scene.regions.get(regionId);
-      if (region) {
-        console.log(`Alien Zones | ${tokenDocument.name} entered ${region.name}`);
-        await postZoneEntryMessage(tokenDocument, region);
+      if (region && isAlienZone(region)) {
+        console.log(`Alien Zones | ${tokenDocument.name} entered Alien Zone: ${region.name}`);
+        await handleZoneEntry(tokenDocument, region);
       }
     }
   }

@@ -38,8 +38,15 @@ export function getZoneName(region) {
 export async function postZoneEntryMessage(token, region) {
   const tokenName = getTokenName(token);
   const zoneName = getZoneName(region);
+  const zoneType = region.flags?.["alien-zones"]?.zoneType;
 
-  const content = game.i18n.format("ALIENZONE.EnteredZone", {
+  // Select message key based on zone type
+  let messageKey = "ALIENZONE.EnteredZone";
+  if (zoneType === "unbreathable") {
+    messageKey = "ALIENZONE.EnteredUnbreathableZone";
+  }
+
+  const content = game.i18n.format(messageKey, {
     token: tokenName,
     zone: zoneName
   });

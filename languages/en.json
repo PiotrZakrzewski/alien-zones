@@ -1,4 +1,24 @@
 {
     "ALIENZONE.ModuleName": "Alien Zones",
-    "ALIENZONE.EnteredZone": "{token} entered {zone}"
+    "ALIENZONE.EnteredZone": "{token} entered {zone}",
+    "ALIENZONE.EnteredUnbreathableZone": "{token} entered {zone} (Unbreathable!)",
+
+    "ALIENZONE.Config.Title": "Alien Zone Configuration",
+    "ALIENZONE.Config.EnableZone": "Enable Alien Zone",
+    "ALIENZONE.Config.EnableZoneHint": "Mark this region as an Alien RPG zone with special behaviors",
+    "ALIENZONE.Config.ZoneType": "Zone Type",
+    "ALIENZONE.Config.ZoneTypeHint": "Choose the type of zone effects to apply when tokens enter",
+
+    "ALIENZONE.ZoneTypes.Basic": "Basic Zone",
+    "ALIENZONE.ZoneTypes.BasicDesc": "Shows a chat message when entered (default behavior)",
+    "ALIENZONE.ZoneTypes.Unbreathable": "Unbreathable Zone",
+    "ALIENZONE.ZoneTypes.UnbreathableDesc": "Triggers Air supply roll when entered",
+
+    "ALIENZONE.Messages.SupplyRollPrompt": "{token} entered {zone} - Roll {supply} supply!",
+    "ALIENZONE.Messages.NoAirSupply": "{token} has no air supply remaining!",
+    "ALIENZONE.Messages.NoAirSupplyDramatic": "{token} stumbles into {zone}, gasping desperately... but their air supply has run out. The atmosphere burns their lungs.",
+    "ALIENZONE.Messages.CriticalDanger": "⚠️ CRITICAL DANGER",
+
+    "ALIENZONE.Errors.RequiresAlienRPG": "Unbreathable zones require the Alien RPG system to be active",
+    "ALIENZONE.Errors.SupplyRollFailed": "Failed to trigger supply roll - please roll manually"
 }
